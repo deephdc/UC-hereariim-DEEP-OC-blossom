@@ -82,6 +82,11 @@ RUN curl -sS  http://get.onedata.org/oneclient-1902.sh  | bash -s -- oneclient="
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/* 
 
+
+RUN pip install --upgrade pip
+
+RUN pip install --upgrade deepaas
+
 # Install DEEPaaS from PyPi
 # Install FLAAT (FLAsk support for handling Access Tokens)
 RUN pip install --no-cache-dir \
