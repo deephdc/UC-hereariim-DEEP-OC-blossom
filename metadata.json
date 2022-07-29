@@ -1,11 +1,11 @@
 {
-    "title": "blossom",
+    "title": "Apple tree blossom image segmentation",
     "summary": "We suggest a 2D image segmentation model based on UNET algorithm to segment images with blossoming apple tree",
     "description": [
-		"This is blossom application using DEEPaaS API",
-           "",
-           "**References**\n",
-           ""
+		"Apple flowers are very sensitive to temperature",
+           "The study of their development makes it possible to study climate change.",
+           "This module proposes a model for the segmentation of apple blossom images.",
+           "This model is based on the UNET algorithm"
 	],
     "keywords": [
         "docker",
