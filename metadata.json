@@ -15,7 +15,7 @@
     "date_creation": "2022-07-26",
     "sources": {
 		"dockerfile_repo": "https://github.com/hereariim/DEEP-OC-blossom",
-		"docker_registry_repo": "herearii/deep-oc-blossom",
+		"docker_registry_repo": "deephdc/deep-oc-blossom",
 		"code": "https://github.com/hereariim/blossom"
 	},
     "continuous_integration": {
