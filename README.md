@@ -4,7 +4,7 @@
 
 # DEEP-OC-blossom
 
-[![Build Status](https://jenkins.indigo-datacloud.eu/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-blossom/master)](https://jenkins.indigo-datacloud.eu/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-blossom/job/master)
+[![Build Status](https://jenkins.indigo-datacloud.eu/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/UC-hereariim-DEEP-OC-blossom/master)](https://jenkins.indigo-datacloud.eu/job/Pipeline-as-code/job/DEEP-OC-org/job/UC-hereariim-DEEP-OC-blossom/job/master)
 
 This is a container that will run [blossom](https://github.com/hereariim/blossom) application leveraging the DEEP as a Service API component ([DEEPaaS API V2](https://github.com/indigo-dc/DEEPaaS)).
 
@@ -17,11 +17,11 @@ To run the Docker container directly from Docker Hub and start using the API
 simply run the following command:
 
 ```bash
-$ docker run -ti -p 5000:5000 -p 6006:6006 herearii/deep-oc-blossom
+$ docker run -ti -p 5000:5000 -p 6006:6006 deephdc/uc-hereariim-deep-oc-blossom
 ```
 
 This command will pull the Docker container from the Docker Hub
-[herearii](https://hub.docker.com/u/herearii/) repository and start the default command (deepaas-run --listen-ip=0.0.0.0).
+[deephdc](https://hub.docker.com/u/deephdc/) repository and start the default command (deepaas-run --listen-ip=0.0.0.0).
 
 **N.B.** For either CPU-based or GPU-based images you can also use [udocker](https://github.com/indigo-dc/udocker).
 
@@ -56,14 +56,14 @@ Building the container:
 
     ```bash
     $ cd DEEP-OC-blossom
-    $ docker build -t herearii/deep-oc-blossom .
+    $ docker build -t deephdc/uc-hereariim-deep-oc-blossom .
     ```
 
 3. Run the container (if you enable JupyterLab during the build, `--build-arg jlab=true`, 
 you should also add port 8888, i.e. `-p 8888:8888`):
 
     ```bash
-    $ docker run -ti -p 5000:5000 -p 6006:6006 herearii/deep-oc-blossom
+    $ docker run -ti -p 5000:5000 -p 6006:6006 deephdc/uc-hereariim-deep-oc-blossom
     ```
 
 These three steps will download the repository from GitHub and will build the
