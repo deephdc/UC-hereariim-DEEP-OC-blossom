@@ -8,7 +8,7 @@ pipeline {
     }
 
     environment {
-        dockerhub_repo = "herearii/deep-oc-blossom"
+        dockerhub_repo = "deephdc/uc-hereariim-deep-oc-blossom"
         base_cpu_tag = "1.14.0-py3"
         base_gpu_tag = "1.14.0-gpu-py3"
     }
@@ -42,7 +42,7 @@ pipeline {
                         if (env.BRANCH_NAME == 'master') {
                            // CPU (aka latest, i.e. default)
                            id_cpu = DockerBuild(id,
-                                            tag: ['latest', 'cpu'], 
+                                            tag: ['latest', 'cpu'],
                                             build_args: ["tag=${env.base_cpu_tag}",
                                                          "branch=master"])
 
@@ -51,7 +51,7 @@ pipeline {
 
                            // GPU
                            id_gpu = DockerBuild(id,
-                                            tag: ['gpu'], 
+                                            tag: ['gpu'],
                                             build_args: ["tag=${env.base_gpu_tag}",
                                                          "branch=master"])
                         }
@@ -59,7 +59,7 @@ pipeline {
                         if (env.BRANCH_NAME == 'test') {
                            // CPU
                            id_cpu = DockerBuild(id,
-                                            tag: ['test', 'cpu-test'], 
+                                            tag: ['test', 'cpu-test'],
                                             build_args: ["tag=${env.base_cpu_tag}",
                                                          "branch=test"])
 
@@ -68,7 +68,7 @@ pipeline {
 
                            // GPU
                            id_gpu = DockerBuild(id,
-                                            tag: ['gpu-test'], 
+                                            tag: ['gpu-test'],
                                             build_args: ["tag=${env.base_gpu_tag}",
                                                          "branch=test"])
                         }
