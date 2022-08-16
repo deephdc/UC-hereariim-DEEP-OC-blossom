@@ -9,7 +9,7 @@
 # or using default args:
 # $ docker build -t <dockerhub_user>/<dockerhub_repo> .
 #
-# Be Aware! For the Jenkins CI/CD pipeline, 
+# Be Aware! For the Jenkins CI/CD pipeline,
 # input args are defined inside the Jenkinsfile, not here!
 #
 
@@ -31,6 +31,9 @@ ARG jlab=true
 # Oneclient version, has to match OneData Provider and Linux version
 ARG oneclient_ver=19.02.0.rc2-1~bionic
 
+# Fix NVIDIA public key is not available (TF 1.14)
+RUN DEBIAN_FRONTEND=noninteractive apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
+
 # Install ubuntu updates and python related stuff
 # link python3 to python, pip3 to pip, if needed
 # Remember: DEEP API V2 only works with python 3.6 [!]
@@ -41,7 +44,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
          wget \
          python3-setuptools \
          python3-pip \
-         python3-wheel && \ 
+         python3-wheel && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /root/.cache/pip/* && \
@@ -54,7 +57,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     fi && \
     python --version && \
     pip --version
-
 
 # Set LANG environment
 ENV LANG C.UTF-8
@@ -80,7 +82,7 @@ RUN curl -sS  http://get.onedata.org/oneclient-1902.sh  | bash -s -- oneclient="
     apt-get clean && \
     mkdir -p /mnt/onedata && \
     rm -rf /var/lib/apt/lists/* && \
-    rm -rf /tmp/* 
+    rm -rf /tmp/*
 
 
 RUN pip install --upgrade pip
