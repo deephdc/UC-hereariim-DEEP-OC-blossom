@@ -8,6 +8,11 @@
            "This model is based on the UNET algorithm"
 	],
     "keywords": [
+        "tensorflow",
+        "trainable", 
+        "inference", 
+        "pre-trained",
+        "deep learning",
         "docker",
         "api-v2"
     ],
