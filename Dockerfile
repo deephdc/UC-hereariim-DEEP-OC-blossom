@@ -133,4 +133,4 @@ EXPOSE 6006  8888
 # Account for OpenWisk functionality (deepaas >=0.4.0) + proper docker stop
 # CMD ["deepaas-run", "--openwhisk-detect", "--listen-ip", "0.0.0.0", "--listen-port", "5000"]
 
-CMD ["deepaas-run", "--openwhisk-detect", "--listen-ip", "127.0.0.8", "--listen-port", "5000"]
+CMD ["deepaas-run", "--openwhisk-detect", "--listen-ip", "127.0.0.1", "--listen-port", "5000"]
