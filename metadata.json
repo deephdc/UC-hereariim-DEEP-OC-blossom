@@ -5,7 +5,9 @@
 		"Apple flowers are very sensitive to temperature",
            "The study of their development makes it possible to study climate change.",
            "This module proposes a model for the segmentation of apple blossom images.",
-           "This model is based on the UNET algorithm"
+           "This model is based on the UNET algorithm.",
+           "We suggest a tool for inference of images and a tool for retrain a model",
+           "The model in inference and retraining is tensorflow model in h5 format."
 	],
     "keywords": [
         "tensorflow",
