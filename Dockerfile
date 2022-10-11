@@ -138,3 +138,5 @@ CMD ["deepaas-run", "--openwhisk-detect", "--listen-ip", "0.0.0.0", "--listen-po
 # After pushing files in github repository =>
 # 1- docker build --no-cache -t blossom .
 # 2- docker run -ti -p 5000:5000 -p 6006:6006 -p 8888:8888 blossom
+
+# docker run -ti -p 5000:5000 -p 6006:6006 -p 8888:8888 blossom /bin/bash
