@@ -136,6 +136,10 @@ CMD ["deepaas-run", "--openwhisk-detect", "--listen-ip", "0.0.0.0", "--listen-po
 # CMD ["deepaas-run", "--openwhisk-detect", "--listen-ip", "127.0.0.1", "--listen-port", "5000"]
 
 # After pushing files in github repository =>
+# 1- docker build --no-cache -t deephdc/uc-hereariim-deep-oc-blossom .
+# 2- docker run -ti -p 5000:5000 -p 6006:6006 -p 8888:8888 deephdc/uc-hereariim-deep-oc-blossom
+
+
 # 1- docker build --no-cache -t blossom .
 # 2- docker run -ti -p 5000:5000 -p 6006:6006 -p 8888:8888 blossom
 
