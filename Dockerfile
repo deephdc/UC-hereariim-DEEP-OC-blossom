@@ -140,7 +140,9 @@ CMD ["deepaas-run", "--openwhisk-detect", "--listen-ip", "0.0.0.0", "--listen-po
 # 2- docker run -ti -p 5000:5000 -p 6006:6006 -p 8888:8888 deephdc/uc-hereariim-deep-oc-blossom
 
 
-# 1- docker build --no-cache -t blossom .
-# 2- docker run -ti -p 5000:5000 -p 6006:6006 -p 8888:8888 blossom
+# 1- docker build --no-cache -t deephdc/uc-hereariim-deep-oc-blossom .
+# 2- docker run -ti -p 5000:5000 -p 6006:6006 -p 8888:8888 deephdc/uc-hereariim-deep-oc-blossom
 
-# docker run -ti -p 5000:5000 -p 6006:6006 -p 8888:8888 blossom /bin/bash
+# docker run -ti -p 5000:5000 -p 6006:6006 -p 8888:8888 deephdc/uc-hereariim-deep-oc-blossom /bin/bash
+
+# deepaas-run --listen-ip 0.0.0.0
