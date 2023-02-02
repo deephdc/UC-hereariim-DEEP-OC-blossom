@@ -123,7 +123,7 @@ pipeline {
 
                 script {
                     def derived_job_locations =
-                    ['Pipeline-as-code/DEEP-OC-org/DEEP-OC-blossom'
+                    ['Pipeline-as-code/DEEP-OC-org/UC-hereariim-DEEP-OC-blossom'
                     ]
 
                     for (job_loc in derived_job_locations) {
