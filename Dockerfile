@@ -146,3 +146,7 @@ CMD ["deepaas-run", "--openwhisk-detect", "--listen-ip", "0.0.0.0", "--listen-po
 # docker run -ti -p 5000:5000 -p 6006:6006 -p 8888:8888 deephdc/uc-hereariim-deep-oc-blossom /bin/bash
 
 # deepaas-run --listen-ip 0.0.0.0
+
+# docker run -ti -v C:/Users/User/AppData/Roaming/rclone/rclone.conf:/rclone/rclone.conf deephdc/uc-hereariim-deep-oc-blossom /bin/bash
+
+# docker run -ti -v C:/Users/User/AppData/Roaming/rclone/rclone.conf:/srv/.rclone/rclone.conf -p 5000:5000 deephdc/uc-hereariim-deep-oc-blossom
