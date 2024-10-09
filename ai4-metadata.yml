@@ -1,0 +1,26 @@
+metadata_version: 2.0.0
+title: Apple tree blossom image segmentation
+summary: We suggest a 2D image segmentation model based on UNET algorithm to segment images with blossoming apple tree
+description: |-
+  Apple flowers are very sensitive to temperature. The study of their development makes it possible to study climate change. 
+
+  This module proposes a model for the segmentation of apple blossom images. This model is based on the UNET algorithm. We suggest a tool for inference of images and a tool for retrain a model. The model in inference and retraining is a Tensorflow model in h5 format.
+
+dates:
+  created: '2022-07-26'
+  updated: '2024-10-09'
+links:
+  source_code: https://github.com/hereariim/blossom
+  docker_image: deephdc/uc-hereariim-deep-oc-blossom
+  weights: https://github.com/hereariim/blossom/tree/master/blossom/models
+tags:
+  - deep learning
+tasks:
+  - Computer Vision
+categories:
+  - AI4 inference
+  - AI4 pre trained
+libraries:
+  - TensorFlow
+data-type:
+  - Image
