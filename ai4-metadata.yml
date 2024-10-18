@@ -10,7 +10,7 @@ dates:
   created: '2022-07-26'
   updated: '2024-10-09'
 links:
-  source_code: https://github.com/hereariim/blossom
+  source_code: https://github.com/deephdc/UC-hereariim-DEEP-OC-blossom
   docker_image: deephdc/uc-hereariim-deep-oc-blossom
   weights: https://github.com/hereariim/blossom/tree/master/blossom/models
 tags:
